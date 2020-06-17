@@ -1,0 +1,412 @@
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Light'), local('Avenir-Light'),
+        url('Avenir-Light.woff2') format('woff2'),
+        url('Avenir-Light.woff') format('woff'),
+        url('Avenir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(62, 62, 63, 0.2);
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.header__logo {
+    margin-top: 5px;
+}
+
+.header__nav ul li {
+    display: inline-block;
+    padding: 27px;
+    font-family: Avenir;
+    font-size: 17px;
+    line-height: 150%;
+}
+
+.header__btn__post {
+    margin: 20px 20px 20px 53px;
+    color: #FFFFFF;
+}
+
+.btn__post {
+    border: 2px solid #C051A0;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: Avenir;
+    font-size: 17px;
+    line-height: 150%;
+    background: #FFFFFF;
+    padding: 6px 16px;
+    color: #C051A0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.btn__cta {
+    font-family: Avenir;
+    font-size: 17px;
+    line-height: 27px;
+    background: #C051A0;
+    border: 2px solid #C051A0;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(115, 35, 92, 0.3);
+    border-radius: 30px;
+    color: #FFFFFF;
+    padding: 6px 16px;
+}
+
+.gallery .photos {
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gallery .photos img {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.gallery .photos img.showed {
+    opacity:1;
+}
+
+.gallery {
+    padding-bottom: 550px; 
+}
+
+.About__us__main__logo {
+    border-radius: 150px;
+}
+
+.About__us__caption {
+    margin-top: 30px;
+    font-family: Neutra Text TF;
+    font-size: 36px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #3E3E3F;
+}
+
+.NDIS {
+    font-family: Avenir;
+    font-size: 15px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3E3E3F;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.About__us__content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.About__us__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.About__us__logo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.About__us__logo img {
+    padding: 15px 0px 15px 40px;
+}
+
+.About__us__description__1,
+.About__us__description__2,
+.About__us__description__3,
+.About__us__description__4 {
+    padding: 15px 0px;
+}
+
+.HCW {
+    padding: 50px 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px #E5E5E5;
+}
+
+.HCW__caption__text {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    font-family: Neutra Text TF;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color:#3E3E3F;
+
+}
+
+.HCW__text__cont {
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    justify-content: center;
+}
+
+.HCW__inner  {
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HCW__inner div {
+    padding: 40px;
+}
+
+.HCW__inner__description span {
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3E3E3F;
+}
+
+.HCW__inner__description  {
+    display: flex;
+    justify-content: center;
+}
+
+.HCW__inner__man,
+.HCW__inner__telephone,
+.HCW__inner__vector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HCW__inner span {
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3E3E3F;
+    padding-top: 30px;
+}
+
+.Workers__help__caption {
+    display: flex;
+    justify-content: center;
+    font-family: Neutra Text TF;
+    font-size: 36px;
+    line-height: 35px;
+    text-align: center;
+    color: #3E3E3F;
+}
+
+.Workers__help__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.Workers__help__inner div {
+    padding: 30px;
+}
+
+.Workers__help__inner span {
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3E3E3F;
+}
+
+.Workers__help__careseekers_1,
+.Workers__help__careseekers_2,
+.Workers__help__careseekers_3,
+.Workers__help__careseekers_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Choose__prefer__pink {
+    border: 2px solid #C051A0;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 150%;
+    background:  #C051A0;
+    color: white;
+    padding: 8px 130px;
+}
+
+.Choose__prefer__btn__turquoise {
+    border: 2px solid #3BBFBB;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 150%;
+    background: #3BBFBB;
+    color: white;
+    padding: 8px 110px;
+}
+
+.Choose__prefer__btn {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.Choose__prefer__caption {
+    display: flex;
+    justify-content: center;
+    font-family: Neutra Text TF;
+    font-size: 36px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.Choose__prefer button a {
+    text-decoration: none;
+    color: white;
+}
+
+.Start_connecting {
+    background: #C051A0;
+}
+
+.Start_connecting__caption {
+    display: flex;
+    justify-content: center;
+    font-family: Neutra Text TF;
+    font-size: 36px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    color: white;
+}
+
+.Start_connecting__btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.Start__connecting__input {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(115, 35, 92, 0.3);
+    border-radius: 30px;
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 600px;
+    height: 50px;
+    color: #AEAEAE;
+    padding-left: 15px;
+    border: none;
+}
+
+.Start__connecting__search {
+    width: 150px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(115, 35, 92, 0.3);
+    border-radius: 30px;
+    border: none;
+    color: #3E3E3F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__nav ul li {
+    display: inline-block;
+    padding: 70px 60px;
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.footer__nav li a {
+    text-decoration: none;
+    list-style: none;
+    color: #3E3E3F;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__btn__pink {
+    background: #C051A0;
+    box-shadow: 0px 4px 10px rgba(115, 35, 92, 0.3);
+    border-radius: 30px;
+    color: #FFFFFF;
+    border: none;
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    width: 250px;
+    height: 50px;
+    padding-left: 45px;
+    margin-left: 30px;
+}
+
+.footer__btn {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.copyright {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid gray; 
+    font-family: Avenir;
+    font-size: 18px;
+    line-height: 150%;
+}
