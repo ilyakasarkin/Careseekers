@@ -8,11 +8,7 @@
     font-style: normal;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
+/* header */
 .header {
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(62, 62, 63, 0.2);
@@ -22,6 +18,7 @@ body {
     align-items: center;
     flex-wrap: nowrap;
 }
+
 .header__logo {
     margin-top: 5px;
 }
@@ -32,6 +29,16 @@ body {
     font-family: Avenir;
     font-size: 17px;
     line-height: 150%;
+}
+
+.header__nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.header__nav ul li a:hover {
+    color: #C051A0;
+    transition: 1s;
 }
 
 .header__btn__post {
@@ -54,6 +61,21 @@ body {
     text-align: center;
 }
 
+.btn__post a {
+    text-decoration: none;
+    color: #C051A0;
+}
+
+.btn__post:hover a {
+    color: white;
+    transition: 1s;
+}
+
+.btn__post:hover {
+    background: #C051A0;
+    transition: 1s;    
+}
+
 .btn__cta {
     font-family: Avenir;
     font-size: 17px;
@@ -67,6 +89,22 @@ body {
     padding: 6px 16px;
 }
 
+.btn__cta a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn__cta:hover {
+    background-color: white;
+    transition: 1s;
+}
+
+.btn__cta:hover a {
+    color: #C051A0;
+    transition: 1s;
+}
+
+/* section__gallery */
 .gallery .photos {
     width: 1920px;
     margin: 0 auto;
@@ -77,17 +115,18 @@ body {
     position: absolute;
     width: 100%;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 2s;
 }
 
 .gallery .photos img.showed {
-    opacity:1;
+    opacity: 1;
 }
 
 .gallery {
-    padding-bottom: 550px; 
+    padding-bottom: 700px;
 }
 
+/* section About__us */
 .About__us__main__logo {
     border-radius: 150px;
 }
@@ -149,6 +188,7 @@ body {
     padding: 15px 0px;
 }
 
+/* section HCW */
 .HCW {
     padding: 50px 0px;
     background: #FFFFFF;
@@ -163,7 +203,7 @@ body {
     font-size: 30px;
     line-height: 35px;
     text-align: center;
-    color:#3E3E3F;
+    color: #3E3E3F;
 
 }
 
@@ -175,7 +215,7 @@ body {
     justify-content: center;
 }
 
-.HCW__inner  {
+.HCW__inner {
     margin-left: 100px;
     display: flex;
     justify-content: center;
@@ -193,7 +233,7 @@ body {
     color: #3E3E3F;
 }
 
-.HCW__inner__description  {
+.HCW__inner__description {
     display: flex;
     justify-content: center;
 }
@@ -214,6 +254,7 @@ body {
     padding-top: 30px;
 }
 
+/* section Workers__help */
 .Workers__help__caption {
     display: flex;
     justify-content: center;
@@ -252,6 +293,7 @@ body {
     justify-content: center;
 }
 
+/* section Choose__prefer */
 .Choose__prefer__pink {
     border: 2px solid #C051A0;
     box-sizing: border-box;
@@ -259,12 +301,16 @@ body {
     font-family: Avenir;
     font-size: 20px;
     line-height: 150%;
-    background:  #C051A0;
+    background: #C051A0;
     color: white;
     padding: 8px 130px;
 }
 
-.Choose__prefer__btn__turquoise {
+.Choose__prefer__pink:hover {
+    text-decoration: underline;
+}
+
+.Choose__prefer__turquoise {
     border: 2px solid #3BBFBB;
     box-sizing: border-box;
     border-radius: 30px;
@@ -274,6 +320,11 @@ body {
     background: #3BBFBB;
     color: white;
     padding: 8px 110px;
+    margin-left: -40px;
+}
+
+.Choose__prefer__turquoise:hover {
+    text-decoration: underline;
 }
 
 .Choose__prefer__btn {
@@ -342,6 +393,14 @@ body {
     border: none;
 }
 
+input {
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
 .Start__connecting__search {
     width: 150px;
     height: 50px;
@@ -352,9 +411,10 @@ body {
     color: #3E3E3F;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
+/*section footer */
 .footer__nav ul li {
     display: inline-block;
     padding: 70px 60px;
@@ -367,6 +427,11 @@ body {
     text-decoration: none;
     list-style: none;
     color: #3E3E3F;
+}
+
+.footer__nav li a:hover {
+    color: #C051A0;
+    transition: 1s;
 }
 
 .footer__nav {
@@ -394,6 +459,20 @@ body {
     margin-left: 30px;
 }
 
+.footer__btn__pink:hover { 
+    background: white;
+    transition: 1s;
+}
+
+.footer__btn__pink:hover a {
+    color: #C051A0;
+}
+
+.footer__btn__pink a {
+    text-decoration: none;
+    color: white;
+}
+
 .footer__btn {
     display: flex;
     justify-content: center;
@@ -405,7 +484,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 2px solid gray; 
+    border-top: 2px solid gray;
     font-family: Avenir;
     font-size: 18px;
     line-height: 150%;
